@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovelBase</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>NovelBase</h1>
+        <p>Your ultimate visual novel database</p>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="button-group">
+                <button onclick="showForm('addNovel')">Add Visual Novel</button>
+                <button onclick="showForm('addGenre')">Add Genre</button>
+                <button onclick="showForm('addCharacter')">Add Character</button>
+                <button onclick="showForm('addReview')">Add Review</button>
+                <button onclick="showForm('updateNovel')">Update Visual Novel</button>
+                <button onclick="showForm('deleteNovel')">Delete Visual Novel</button>
+                <button onclick="showForm('searchNovels')">Search Visual Novels</button>
+                <button onclick="viewNovels()">View All Visual Novels</button>
+            </div>
+        </section>
+        <section id="content">
+            <!-- Content will be dynamically loaded here -->
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
